@@ -83,7 +83,7 @@ async function createNote() {
               <h2>{note.name}</h2>
               <p>{note.description}</p>
               {
-                note.image && <img src={note.image} style={{width: 300}} />
+                note.image && <img src={note.image} style={{width: 250}} />
               }
               <br />
               <button onClick={() => deleteNote(note)}>Remove</button>
