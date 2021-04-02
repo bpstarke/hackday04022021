@@ -55,7 +55,7 @@ async function createNote() {
 
   return (
     <div className="App">
-      <h1>Boss List</h1>
+      <h1>Boss Ideas</h1>
       <input
         onChange={e => setFormData({ ...formData, 'name': e.target.value})}
         placeholder="Boss name"
@@ -82,10 +82,11 @@ async function createNote() {
             <div key={note.id || note.name}>
               <h2>{note.name}</h2>
               <p>{note.description}</p>
-              <button onClick={() => deleteNote(note)}>Delete</button>
               {
-                note.image && <img src={note.image} style={{width: 400}} />
+                note.image && <img src={note.image} style={{width: 300}} />
               }
+              <br />
+              <button onClick={() => deleteNote(note)}>Remove</button>
             </div>
           ))
         }
