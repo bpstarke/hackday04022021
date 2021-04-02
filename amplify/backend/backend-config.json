@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "hackday0402202164c94e90": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
